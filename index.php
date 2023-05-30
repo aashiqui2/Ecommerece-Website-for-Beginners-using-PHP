@@ -13,8 +13,8 @@
 <body>
     <?php
 
-    include './partials/connect.php';
-    include './partials/header.php';
+    include 'connect.php';
+    include 'header.php';
     ?>
     <h1 class="text-center text-primary my-3">Welcome to our store</h1>
     <h1 class="text-center text-success my-4">Shop by Cataegory</h1>
@@ -44,7 +44,7 @@
                 <h5 class="card-title">'.$category_name.'</h5>
                 <p class="card-text">'.substr($category_desc,0,55).'....</p>
                 <p>Rs '.$category_price.'-/</p>
-                <a href="./details.php?detailsid='.$category_id .'" class="btn btn-primary">Shop Now</a>
+                <a href="details.php?detailsid='.$category_id .'" class="btn btn-primary">Shop Now</a>
             </div>
         </div>
     </div>  ';

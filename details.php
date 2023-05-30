@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <?php include './partials/connect.php';  ?>
-    <?php include './partials/header.php';  ?>
+    <?php include 'connect.php';  ?>
+    <?php include 'header.php';  ?>
     <?php
     $id = $_GET['detailsid'];
     // echo $id;
@@ -31,7 +31,7 @@
 
             <h1 class="display-4 text-center text-primary"><?php echo $category_name; ?></h1>
             <p class="lead"><?php echo $category_desc; ?></p>
-            <button class="btn btn-dark "><a class="btn btn-dark btn-lg" href="../index.php" role="button">Continue Shopping</a></button>
+            <button class="btn btn-dark "><a class="btn btn-dark btn-lg" href="index.php" role="button">Continue Shopping</a></button>
         </div>
     </div>
 
@@ -39,8 +39,6 @@
         <div class="row">
             <div class="col-lg-6 col-sm-12">
                 <img src=<?php echo $category_image?> class="img-fluid" alt="" style="height:300px;object-fir:contain">
-
-
 
             </div>
             <div class="col-lg-6 col-sm-12">
